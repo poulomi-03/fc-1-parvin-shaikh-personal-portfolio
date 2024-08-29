@@ -311,14 +311,14 @@ p {
 /* projects-section begins */
 .projects-section{
   width: 100%;
-  height: auto;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
   gap: 90px;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 .projects-section .projects-content {
