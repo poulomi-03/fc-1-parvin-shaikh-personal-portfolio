@@ -1,0 +1,77 @@
+/* Media query for screens between 400px and 750px */
+@media (max-width: 750px) {
+  .profile-page-section .main-nav-bar {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    place-items: center; /* Centers items in grid cells */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 5px; /* Space between items */
+  }
+
+  .profile-page-section .main-nav-bar .nav-ele {
+    width: 90%; /* Make items take full width of grid cell */
+  }
+
+  .about-me-section .about-me-content {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    align-content: center;
+    gap: 20px;
+  }
+
+  .education-section {
+    margin-top: 600px;
+    gap: 50px;
+  }
+
+  .education-section .education-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 40px;
+    /* border: 2px solid green; */
+  }
+
+  .education-content .education-qualification {
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    align-content: start;
+  }
+
+  .skills-section {
+    margin-top: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    /* border: 2px solid red; */
+  }
+
+  .technical-skills {
+    width: 90%;
+    /* border: 2px solid pink; */
+  }
+
+  .soft-skills {
+    width: 100%;
+    gap: 15px; /* Space between items */
+    border: 2px solid red;
+  }
+
+  .soft-skills .card {
+    width: 100%;
+    height: 100%;
+  }
+}

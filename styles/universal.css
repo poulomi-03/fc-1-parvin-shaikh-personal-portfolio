@@ -1,0 +1,36 @@
+/* Universal design starts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "PT Sans", sans-serif,'Baskervville SC','Lora';
+}
+.baskervville-sc-regular {
+  font-family: "Baskervville SC", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.lora-skills-section{
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+  overflow-x: hidden;
+  background-color: #000000;
+}
+
+span{
+  color: #7cf32c;
+}
+
+/* universal design ends */
