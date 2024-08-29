@@ -71,7 +71,7 @@
   .soft-skills {
     width: 100%;
     gap: 15px; /* Space between items */
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
 
   .soft-skills .card {
@@ -90,5 +90,16 @@
     flex-direction: column;
     gap: 50px;
     /* border: 2px solid green; */
+  }
+}
+@media(max-width :800px){
+  .contact-section{
+    margin-top: 90px;
+  }
+  .contact-inputs{
+    width: 80vw;
+  }
+  .contact-right{
+    display: none;
   }
 }
