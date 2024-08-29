@@ -14,6 +14,10 @@
     width: 90%; /* Make items take full width of grid cell */
   }
 
+  .about-me-section{
+    margin-top: 600px;
+  }
+
   .about-me-section .about-me-content {
     width: 90%;
     height: auto;
@@ -73,5 +77,18 @@
   .soft-skills .card {
     width: 100%;
     height: 100%;
+  }
+  
+  .projects-section{
+    margin-top: 600px;
+  }
+
+  .projects-section .projects-content {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    /* border: 2px solid green; */
   }
 }
