@@ -1,7 +1,7 @@
 /* Media query for screens between 400px and 750px */
 @media (max-width: 750px) {
   .profile-page-section{
-    height: auto;
+    height: 100vh;
   }
 
   .profile-page-section .main-nav-bar {
