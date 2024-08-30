@@ -372,6 +372,7 @@ p {
   justify-content: start;
   align-items: start;
   align-content: center;
+  position: relative;
   padding: 15px;
   gap: 10px;
   /* border: 2px solid red; */
@@ -380,114 +381,83 @@ p {
 .projects-cards .content p{
   font-size: 17px;
 }
+
 .content .description{
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.description i{
-  margin-top: 140px;
-  font-size: 26px;
+  /* border: 2px solid red; */
 }
 
-.description a:hover{
-  color: #7cf32c;
+.content a {
+  position: absolute; 
+  bottom: 0; 
+  right: 0; 
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  z-index: 1;
+  color: #fff;
+}
+
+.content a:hover{
+  color: #2bb35b;
+  text-decoration: none;
 }
 
 /* projects-sections ends  */
 
-/* courses-section starts */
-#courses-section{
-  padding: 30px 0;
-}
-.courses-list{
-  /* display: grid;
-  grid-template-columns:repeat(2,1fr);
-  grid-gap:40px;
-  margin-top: 50px; */
+
+/* experience-section starts */
+.experience-section{
+  width: 100%;
+  height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  flex-direction: row;
-  gap: 200px;
-}
-.courses-list .courses-card{
-  background: #262626;
-  padding: 40px;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  align-content: start;
-  font-size:13px;
-  font-weight: 300;
-  border-radius: 10px; 
-  transition: background 0.5s,transform 0.5s ;
-}
-.courses-card{
-  display: flex;
   align-items: center;
   align-content: center;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 400px;
-  height: 500px;
-  margin-top: 50px;
-  color: rgb(58, 155, 17);
-}
-.courses-list .courses-card p{
-  line-height: 20px;
-  font-size: 20px;
-}
-.courses-list .courses-card i{
-  font-size: 30px;
-  margin-bottom: 30px;
+  gap: 50px;
+  border: 2px solid red;
 }
 
-.courses-list div a{
-  text-decoration: none;
-  color: #fff;
-  font-size: 12px;
-  margin-top: 20px;
-  display: inline-block;
-}
-.courses-org{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.course-title{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.courses-list .courses-card:hover{
-  background:#56ea58 ;
-  transform: translateY(-10px);
-  color: black;
-  font-weight: 700;
-}
-.courses-duration{
+.experience-container{
+  width: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  gap: 100px;
+  border: 2px solid blue;
 }
-.course-skills{
+
+.experience-container .experience-card{
+  height: 500px;
+  width: 30%;
   display: flex;
+  flex-direction: column;
   align-items: start;
   justify-content: start;
+  align-content: center;
+  gap: 40px;
+  padding-left: 30px;
+  padding-right: 20px;
+  position: relative;
+  border: 2px solid yellow;
 }
 
-.course-skills img{
-  width: 60px;
-  height: 60px;
+.experience-card .experience-duration{
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  margin-left: 30px;
+  margin-bottom: 10px;
 }
 
-.courses-card .course-skills p:hover{
-  color: black;
-  
-}
-/* courses-section ends  */
+
+
+/* experience-section ends  */
 
 
 
@@ -509,20 +479,27 @@ p {
   transform: translateX(-100%);
   /* border: 2px solid red; */
 }
-.skills-section h1{
-  margin-left: 50px;
+
+.skills-section .skills-heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
+/* .skills-section h1{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+} */
+
 .show {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
 }
+
 .skills-section li {
   list-style: none;
-}
-
-h1 {
-  text-align: center;
 }
 
 h3 {
