@@ -83,3 +83,32 @@ entries.forEach((entry)=>{
 const hiddenElements= document.querySelectorAll('.skills-section');
 
 hiddenElements.forEach((el) => observer.observe(el))
+
+
+
+
+// back button
+// Get the button element
+const backToHomeBtn = document.getElementById('backToHomeBtn');
+
+// Function to show or hide the button based on scroll position
+function handleScroll() {
+    // Show the button when the user scrolls down 200px from the top
+    if (window.scrollY > 200) {
+        backToHomeBtn.style.display = 'block';
+    } else {
+        backToHomeBtn.style.display = 'none';
+    }
+}
+
+// Function to scroll back to the home section
+function scrollToHome() {
+    const homeSection = document.getElementById('profile-page-section');
+    homeSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+// Attach the scroll event to the window
+window.addEventListener('scroll', handleScroll);
+
+// Attach click event to the button
+backToHomeBtn.addEventListener('click', scrollToHome);

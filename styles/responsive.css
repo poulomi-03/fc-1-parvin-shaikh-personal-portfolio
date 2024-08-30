@@ -1,5 +1,5 @@
 /* Media query for screens between 400px and 750px */
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .profile-page-section {
     height: 100vh;
   }
@@ -20,7 +20,7 @@
 
   .about-me-section {
     height: auto;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .about-me-section .about-me-content {
@@ -36,7 +36,7 @@
 
   .education-section {
     height: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     gap: 50px;
   }
 
@@ -63,7 +63,7 @@
 
   .skills-section {
     height: auto;
-    margin-top: 80px;
+    margin-top: 50px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -101,7 +101,8 @@
 
   .projects-section {
     height: auto;
-    margin-top: 100px;
+    margin-top: 50px;
+    /* border: 2px solid red; */
   }
 
   .projects-section .projects-content {
@@ -116,14 +117,250 @@
   .projects-content .projects-cards p {
     font-size: 17px;
   }
-}
-@media (max-width: 800px) {
-  .contact-section {
-    margin-top: 10px;
+
+  .experience-section{
+    height: auto;
+    margin-top: 50px;
+    /* border: 2px solid red; */
   }
+
+  .experience-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    /* border: 2px solid blue; */
+  }
+
+  .experience-container .experience-card {
+    width: 95%;
+  }
+
+  .experience-card .experience-heading h1 {
+    font-size: 19px;
+  }
+
+  .experience-card .experience-heading i {
+    font-size: 18px;
+  }
+
+  .experience-org p {
+    font-size: 18px;
+  }
+
+  .experience-org i {
+    font-size: 18px;
+  }
+
+  .experience-skills p {
+    font-size: 18px;
+  }
+
+  .experience-skills i {
+    font-size: 18px;
+  }
+
+  .experience-duration p {
+    font-size: 18px;
+  }
+
+  .experience-duration i {
+    font-size: 18px;
+  }
+
+  .contact-section {
+    height: 100vh;
+  }
+
   .contact-inputs {
     width: 80vw;
   }
+
+  .contact-right {
+    display: none;
+  }
+
+}
+
+
+
+
+/* Media query for screens between 800px and 1100px */
+@media (min-width: 801px) and (max-width: 1100px) {
+  .profile-page-section {
+    height: 110vh; /* Adjusted height */
+  }
+
+  .profile-page-section .main-nav-bar {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr); /* Same 3 columns */
+    gap: 10px; /* Increased space between items */
+  }
+
+  .profile-page-section .main-nav-bar .nav-ele {
+    width: 95%; /* Increased width */
+  }
+
+  .about-me-section {
+    height: auto;
+    margin-top: 60px; /* Increased margin */
+  }
+
+  .about-me-section .about-me-content {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    align-content: center;
+    gap: 25px; /* Increased gap */
+  }
+
+  .education-section {
+    height: auto;
+    margin-top: 60px; /* Increased margin */
+    gap: 60px; /* Increased gap */
+  }
+
+  .education-section .education-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 50px; /* Increased gap */
+  }
+
+  .education-content .education-qualification {
+    width: 92%; /* Increased width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    align-content: start;
+  }
+
+  .skills-section {
+    height: auto;
+    margin-top: 60px; /* Increased margin */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 60px; /* Increased gap */
+  }
+
+  .skills-section h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .technical-skills {
+    width: 95%; /* Increased width */
+    text-align: center;
+  }
+
+  .soft-skills {
+    width: 100%;
+    gap: 20px; /* Increased gap */
+  }
+
+  .soft-skills .card {
+    width: 100%;
+    height: 100%;
+  }
+
+  .projects-section {
+    height: auto;
+    margin-top: 60px; /* Increased margin */
+  }
+
+  .projects-section .projects-content {
+    width: 95%; /* Increased width */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px; /* Increased gap */
+  }
+
+  .projects-content .projects-cards p {
+    font-size: 19px; /* Increased font size */
+  }
+
+  .experience-section {
+    height: auto;
+    margin-top: 60px; /* Increased margin */
+  }
+
+  .experience-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px; /* Increased gap */
+  }
+
+  .experience-container .experience-card {
+    width: 97%; /* Increased width */
+  }
+
+  .experience-card .experience-heading h1 {
+    font-size: 21px; /* Increased font size */
+  }
+
+  .experience-card .experience-heading i {
+    font-size: 20px; /* Increased font size */
+  }
+
+  .experience-org p {
+    font-size: 20px; /* Increased font size */
+  }
+
+  .experience-org i {
+    font-size: 20px; /* Increased font size */
+  }
+
+  .experience-skills p {
+    font-size: 20px; /* Increased font size */
+  }
+
+  .experience-skills i {
+    font-size: 20px; /* Increased font size */
+  }
+
+  .experience-duration p {
+    font-size: 20px; /* Increased font size */
+  }
+
+  .experience-duration i {
+    font-size: 20px; /* Increased font size */
+  }
+
+  .contact-section {
+    height: 110vh; /* Adjusted height */
+  }
+
+  .contact-inputs {
+    width: 85vw; /* Increased width */
+  }
+
   .contact-right {
     display: none;
   }
