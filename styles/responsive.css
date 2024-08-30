@@ -64,14 +64,27 @@
   .skills-section {
     height: auto;
     margin-top: 80px;
+    text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     gap: 50px;
     /* border: 2px solid red; */
   }
 
+  .skills-section h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
   .technical-skills {
     width: 90%;
+    text-align: center;
     /* border: 2px solid pink; */
   }
 
