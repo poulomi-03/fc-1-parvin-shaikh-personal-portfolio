@@ -352,8 +352,8 @@ p {
 
 .projects-cards:hover {
   transition: 0.3s;
-  box-shadow: rgba(43, 179, 91, 1) 0px 19px 38px,
-    rgba(43, 179, 91, 1) 7px 7px 7px;
+  box-shadow: rgb(28, 227, 161) 0px 19px 38px,
+    rgb(151, 214, 55) 7px 7px 7px;
 }
 
 .projects-cards img{
@@ -378,10 +378,118 @@ p {
 }
 
 .projects-cards .content p{
-  font-size: 19px;
+  font-size: 17px;
+}
+.content .description{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.description i{
+  margin-top: 140px;
+  font-size: 26px;
+}
+
+.description a:hover{
+  color: #7cf32c;
 }
 
 /* projects-sections ends  */
+
+/* courses-section starts */
+#courses-section{
+  padding: 30px 0;
+}
+.courses-list{
+  /* display: grid;
+  grid-template-columns:repeat(2,1fr);
+  grid-gap:40px;
+  margin-top: 50px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 200px;
+}
+.courses-list .courses-card{
+  background: #262626;
+  padding: 40px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  align-content: start;
+  font-size:13px;
+  font-weight: 300;
+  border-radius: 10px; 
+  transition: background 0.5s,transform 0.5s ;
+}
+.courses-card{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 500px;
+  margin-top: 50px;
+  color: rgb(58, 155, 17);
+}
+.courses-list .courses-card p{
+  line-height: 20px;
+  font-size: 20px;
+}
+.courses-list .courses-card i{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.courses-list div a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.courses-org{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.course-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.courses-list .courses-card:hover{
+  background:#56ea58 ;
+  transform: translateY(-10px);
+  color: black;
+  font-weight: 700;
+}
+.courses-duration{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.course-skills{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.course-skills img{
+  width: 60px;
+  height: 60px;
+}
+
+.courses-card .course-skills p:hover{
+  color: black;
+  
+}
+/* courses-section ends  */
+
+
 
 
 /* skills section starts */
@@ -401,7 +509,9 @@ p {
   transform: translateX(-100%);
   /* border: 2px solid red; */
 }
-
+.skills-section h1{
+  margin-left: 50px;
+}
 .show {
   opacity: 1;
   filter: blur(0);
